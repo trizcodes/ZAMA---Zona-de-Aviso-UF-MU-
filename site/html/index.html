@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZAMA - Zona de Aviso Manaus</title>
+  <!-- Fonte Google: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- CSS do Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Ícones (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1><i class="fas fa-bolt"></i> ZAMA</h1>
+      <p class="tagline">Zona de Aviso - Manaus</p>
+      <p class="header-description">
+        Zona de Aviso - Manaus tem como objetivo informar os usuários sobre quais bairros estão sem luz em tempo real, proporcionando dados atualizados sobre o status de energia na cidade.
+      </p>
+    </div>
+    <nav>
+      <button onclick="checkPowerStatus()">Visualizar status de energia em Manaus</button>
+      <button onclick="reportOutage()">Reportar que está sem luz</button>
+    </nav>
+  </header>
+  <main class="container">
+    <!-- Mapa de Energia -->
+    <section class="card">
+      <h2>Mapa de Energia</h2>
+      <div id="map"></div>
+    </section>
+    <!-- Relatos de Apagões -->
+    <section class="card">
+      <h2>Relatos de Apagões (Hoje: <span id="todayDate"></span>)</h2>
+      <input type="text" id="neighborhoodFilter" class="filter-input" placeholder="Pesquisar por bairro" oninput="updateReports()">
+      <div id="reportsFeed">
+        <p>Nenhum relato registrado para hoje.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 ZAMA - Zona de Aviso Manaus
+  </footer>
+  <!-- Inclusão do Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
