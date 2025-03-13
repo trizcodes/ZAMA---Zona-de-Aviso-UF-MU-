@@ -1,6 +1,6 @@
 # ZAMA - Zona de Aviso Manaus
 
-O **ZAMA** é um site que permite aos usuários verificar e reportar o status de energia em sua unidade federativa(a minha no caso é Manaus) em tempo real. O objetivo principal é informar quais bairros estão sem luz, utilizando geolocalização e um mapa interativo para facilitar a visualização dos dados
+O **ZAMA** é um site que permite aos usuários verificar e reportar o status de energia em tempo real. O objetivo principal é informar quais bairros estão sem luz, utilizando geolocalização e um mapa interativo para facilitar a visualização dos dados
 
 ## Funcionalidades
 
